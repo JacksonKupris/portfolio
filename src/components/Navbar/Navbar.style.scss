@@ -1,0 +1,34 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  a {
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    position: relative;
+    padding: 5% 15% 0%;
+
+    &:hover {
+      color: #dffd44;
+      svg {
+        opacity: 0;
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
