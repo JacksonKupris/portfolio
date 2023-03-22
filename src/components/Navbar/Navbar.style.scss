@@ -20,15 +20,8 @@ nav {
     line-height: 50px;
     position: relative;
     padding: 5% 15% 0%;
-
-    &:hover {
-      color: #dffd44;
-      svg {
-        opacity: 0;
-      }
-      &:after {
-        opacity: 1;
-      }
-    }
+  }
+  a:hover{
+    color: #dffd44;
   }
 }

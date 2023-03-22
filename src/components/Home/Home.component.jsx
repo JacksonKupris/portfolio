@@ -2,6 +2,7 @@ import "./Home.style.scss";
 import "../../assets/svg/Name/name.scss";
 import ProfilePicture from "../../assets/images/ProfilePicture1.jpg";
 import Navbar from "../Navbar/Navbar.component";
+import Contact from "../Contact/Contact.component";
 import Resume from "../../assets/documents/Jackson Kupris Resume.pdf";
 import { ReactComponent as Name } from "../../assets/svg/Name/name.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,38 +15,40 @@ const Home = () => {
       <Navbar />
 
       <div className="container">
-      <div className="name-container">
-      <Name className="animated-name" />
-    </div>
-        <img src={ProfilePicture} className="profile-picture" alt="Profile" />
-        <h2 className="intro-sub">This is my portfolio, I am a developer</h2>
-        <div className="link-wrapper">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/jacksonkupris/"
-            className="social-link"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
+        <div className="name-container">
+          <Name className="animated-name" />
+        </div>
+        <div className="home-container">
+          <img src={ProfilePicture} className="profile-picture" alt="Profile" />
+          <h2 className="intro-sub">This is my portfolio, I am a developer</h2>
+          <div className="link-wrapper">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/jacksonkupris/"
+              className="social-link"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
 
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/JacksonKupris/"
-            className="social-link"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/JacksonKupris/"
+              className="social-link"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
 
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={Resume}
-            className="social-link"
-          >
-            <FontAwesomeIcon icon={faStickyNote} />
-          </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={Resume}
+              className="social-link"
+            >
+              <FontAwesomeIcon icon={faStickyNote} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
