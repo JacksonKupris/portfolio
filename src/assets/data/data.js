@@ -7,7 +7,7 @@ export const projects = [
     title: "Pokédex",
     subtitle: "React",
     description:
-      "A Pokédex that uses the Poke-API to pull Pokémon dynamically as you scroll",
+      "A Pokédex that uses the Poke-API to pull Pokémon dynamically as you scroll.",
     image: pokedex,
     link: "https://jacksonkupris.github.io/Pokedex/",
   },
@@ -23,7 +23,7 @@ export const projects = [
     title: "Python Web Browser",
     subtitle: "Python PyQt5",
     description:
-      "A modern E-Commerce site that utilizes React and Firebase. Test Stripe API is built in.",
+      "A python web browser that uses the PyQt5 library to include full functionality of a typical web browser.",
     image: pythonBrowser,
     link: "https://github.com/JacksonKupris/Python-Web-Browser",
   },
