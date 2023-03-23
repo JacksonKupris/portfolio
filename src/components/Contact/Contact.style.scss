@@ -1,6 +1,7 @@
 .contact-form {
   width: 30vw;
-  border: #fff solid 1px;
+  border: #f8f1f1 solid 1px;
+  box-shadow: 0px 0px 10px #000000;
   ul {
     padding: 0;
     margin: 0;
@@ -14,12 +15,12 @@
   }
 }
 
-textarea,input{
+textarea,
+input {
   width: 100%;
   font-size: 16px;
   background-color: transparent;
-  border: 1px solid #fff;
-
+  border: 1px solid #f8f1f1;
 }
 
 input {
@@ -41,15 +42,16 @@ textarea {
   background-color: transparent;
   font-size: 16px;
   letter-spacing: 2px;
-  border: 1px solid #fff;
+  border: 1px solid #db6400;
+  background-color: #db6400;
 }
 
-.flat-button:hover{
-  color: #dffd44;
-  border: solid 1px #dffd44;
+.flat-button:hover {
+  border: solid 1px #ffa62b;
+  background-color: #ffa62b;
 }
 
 ::placeholder {
   text-align: center;
-  color: #fff;
+  color: #f8f1f1;
 }

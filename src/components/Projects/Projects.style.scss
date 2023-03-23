@@ -7,24 +7,27 @@
 }
 
 .project-image {
-  height: 200px;
+  height: 12.5em;
   width: auto;
-  border: #fff solid 1px;
+  border: #F8F1F1 solid 1px;
+  box-shadow: 0px 0px 10px  #000000;
+
 }
 
-.project-title,
+
 .project-sub,
-.project-link,
+.project-title
 .project-descrip {
-  color: #fff;
+  color: #F8F1F1;
   text-align: center;
 }
 .description-container {
   height: 50px;
   width: 500px;
 }
+
 .project-title:hover {
-  color: #dffd44;
+  color: #ffa62b;
 }
 
 .project-descrip {
