@@ -20,13 +20,15 @@
   width: 300px;
   border-radius: 100%;
   object-fit: cover;
+  border: 2px solid #f8f1f1;
+  box-shadow: 0px 0px 10px  #000000;
 }
 
 .social-link {
   display: flex;
   font-size: 2.5em;
-  color: #fff;
   padding: 7% 15% 5%;
+
 }
 
 .link-wrapper {
