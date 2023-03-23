@@ -15,6 +15,15 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink
+          className="home-link"
+          exact="true"
+          activeclassname="active"
+          to="/about"
+        >
+          ABOUT
+        </NavLink>
+
+        <NavLink
           className="contact-link"
           exact="true"
           activeclassname="active"

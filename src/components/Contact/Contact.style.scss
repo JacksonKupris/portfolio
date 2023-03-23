@@ -1,25 +1,29 @@
 .contact-form {
-  width: 100%;
+  width: 30vw;
+  border: #fff solid 1px;
   ul {
     padding: 0;
     margin: 0;
   }
 
   li {
-    padding: 10px;
+    padding: 1em;
     margin: 0;
-    margin-bottom: 10px;
     list-style: none;
     overflow: hidden;
   }
 }
-input {
-  width: 25%;
-  height: 50px;
+
+textarea,input{
+  width: 100%;
   font-size: 16px;
   background-color: transparent;
-  color: #fff;
   border: 1px solid #fff;
+
+}
+
+input {
+  height: 50px;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
@@ -27,32 +31,25 @@ input:-webkit-autofill:focus {
 }
 
 textarea {
-  width: 25%;
   height: 100px;
-  font-size: 16px;
   resize: none;
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
 }
 
 .flat-button {
-  width: 10%;
+  width: 25%;
   padding: 10px 10px;
   background-color: transparent;
-  color: #fff;
   font-size: 16px;
   letter-spacing: 2px;
   border: 1px solid #fff;
 }
 
-.flat-button:hover {
+.flat-button:hover{
   color: #dffd44;
-  border: 1px solid #dffd44;
+  border: solid 1px #dffd44;
 }
 
 ::placeholder {
   text-align: center;
-
   color: #fff;
 }

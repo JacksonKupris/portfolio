@@ -2,7 +2,6 @@ import "./Home.style.scss";
 import "../../assets/svg/Name/name.scss";
 import ProfilePicture from "../../assets/images/ProfilePicture1.jpg";
 import Navbar from "../Navbar/Navbar.component";
-import Contact from "../Contact/Contact.component";
 import Resume from "../../assets/documents/Jackson Kupris Resume.pdf";
 import { ReactComponent as Name } from "../../assets/svg/Name/name.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,7 +19,7 @@ const Home = () => {
         </div>
         <div className="home-container">
           <img src={ProfilePicture} className="profile-picture" alt="Profile" />
-          <h2 className="intro-sub">This is my portfolio, I am a developer</h2>
+          <h2 className="intro-sub">Full Stack Developer</h2>
           <div className="link-wrapper">
             <a
               target="_blank"

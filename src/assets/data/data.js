@@ -4,14 +4,6 @@ import pythonBrowser from "../images/pythonBrowser.png";
 
 export const projects = [
   {
-    title: "E-commerce site",
-    subtitle: "React and Firebase",
-    description:
-      "A modern E-Commerce site that utilizes React and Firebase. Test Stripe API is built in.",
-    image: monstersRolodex,
-    link: "https://jsbootcamp.com",
-  },
-  {
     title: "Pokédex",
     subtitle: "React",
     description:

@@ -1,11 +1,11 @@
 .project-container {
-  height: 70%;
+  height: 75%;
   width: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 10%;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding: 2em;
 }
 
 .project-image {
@@ -19,19 +19,13 @@
 .project-link,
 .project-descrip {
   color: #fff;
+  text-align: center;
 }
 .description-container {
   height: 50px;
   width: 500px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 2%;
 }
 .project-title:hover {
-  color: #dffd44;
-}
-
-a:hover {
   color: #dffd44;
 }
 
