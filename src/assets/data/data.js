@@ -14,8 +14,7 @@ export const projects = [
   {
     title: "Monster Rolodex",
     subtitle: "React",
-    description:
-      "A modern E-Commerce site that utilizes React and Firebase. Test Stripe API is built in.",
+    description:"A Monster Rolodex that allows you to search and allow the page, utilizes that JSON Placeholder API.",
     image: monstersRolodex,
     link: "https://jacksonkupris.github.io/MonsterRolodex/",
   },
