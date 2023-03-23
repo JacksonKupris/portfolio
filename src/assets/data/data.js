@@ -17,7 +17,7 @@ export const projects = [
     description:
       "A modern E-Commerce site that utilizes React and Firebase. Test Stripe API is built in.",
     image: monstersRolodex,
-    link: "https://reedbarger.com",
+    link: "https://jacksonkupris.github.io/MonsterRolodex/",
   },
   {
     title: "Python Web Browser",
