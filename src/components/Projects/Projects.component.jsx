@@ -8,8 +8,8 @@ const Projects = () => {
     <div>
       <Navbar />
       <div className="container ">
+      <div className="projects-container">
       {projects.map((project) => (
-            <div className="project-container">
             <div>
               <a
                 href={project.link}
@@ -28,8 +28,8 @@ const Projects = () => {
                 <p className="project-descrip">{project.description}</p>
               </div>
             </div>
+            ))}
             </div>
-          ))}
       </div>
     </div>
   );
