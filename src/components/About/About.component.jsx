@@ -1,7 +1,6 @@
 import "./About.style.scss";
 import Navbar from "../Navbar/Navbar.component";
 import Cheeba from "../../assets/images/Cheeba.jpg";
-import Llama from "../../assets/images/llama.jpg";
 
 const About = () => {
   return (
@@ -12,11 +11,6 @@ const About = () => {
         <div className="about-container">
           <div className="about-picture-container"></div>
           <img className="about-picture" src={Cheeba} alt="My Cat Cheeba" />
-          <img
-            className="about-picture"
-            src={Llama}
-            alt="Starfire the Llama and I"
-          />
           <div className="about-paragraph">
             <p>
               Hello there! My name is Jackson Kupris, and I am a software
