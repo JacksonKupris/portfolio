@@ -33,7 +33,8 @@ const Contact = () => {
       <Navbar />
 
       <div className="container">
-        <div className="contact-form">
+      <div className="contact-form">
+        <p className="contact-title">CONTACT ME</p>
           <form ref={refForm} onSubmit={sendEmail}>
             <ul>
               <li>

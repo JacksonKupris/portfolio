@@ -1,30 +1,37 @@
 .about-container {
-  height: 75%;
-  width: 100%;
-  display: flex;
-  justify-content:flex-start;
-  font-size: 20px;
-  margin-top: 5em;
+  display: grid;
+  gap: 1em;
+  font-size: 1.5em;
+  justify-content: center;
+  align-content: center;
+  margin-inline: auto;
+  margin-block: auto;
+  margin-top: 10.25rem;
 }
 
+
+@media (min-width: 40em) {
+  .about-container {
+    height: min(85%, 70.5em);
+    grid-template-rows: 1fr 1fr;
+  }
+  
+}
 .about-paragraph {
   height: 100%;
-  width: 25%;
-  margin-top: 0em;
-  margin-left: 10em;
+  width: min(90%, 70.5em);
+  margin-inline: auto;
+  font-size: clamp(.5rem, 2vw + 1rem, 1.5rem);
 }
 
 .about-picture-container {
   height: 50%;
-  width: -50%;
-  display: flex;
+  width: auto;
 }
 
 .about-picture {
   height: 30em;
   width: auto;
-  margin-left: 20em;
-  margin-top: .5em;
   border: 1px solid #f8f1f1;
   box-shadow: 0px 0px 10px #000000;
 }
