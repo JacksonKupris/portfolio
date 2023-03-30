@@ -1,22 +1,86 @@
-.nav-bar {
+
+.navbar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.navbar-links {
+  height: 100%;
+}
 
-  a {
-    font-size: 25px;
-    display: block;
-    line-height: 50px;
-    position: relative;
-    padding: 5% 15% 0%;
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3em;
+  height: 2em;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f8f1f1;
+  border-radius: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+@media (max-width: 80em) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }

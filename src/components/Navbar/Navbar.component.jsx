@@ -1,102 +1,70 @@
 import "./Navbar.style.scss";
 import { NavLink } from "react-router-dom";
 
+const toggleNav = () => {
+  const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+  toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+  });
+};
+
 const Navbar = () => {
   return (
-    <div className="nav-bar">
-      <nav>
-        <NavLink
-          className="home-link"
-          exact="true"
-          activeclassname="active"
-          to="/"
-        >
-          HOME
-        </NavLink>
+    <nav className="navbar">
+      <button className="toggle-button" onClick={toggleNav}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+      <div className="navbar-links">
+        <ul>
+          <li>
+            <NavLink
+              className="home-link"
+              exact="true"
+              activeclassname="active"
+              to="/"
+            >
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="home-link"
+              exact="true"
+              activeclassname="active"
+              to="/about"
+            >
+              ABOUT
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="contact-link"
+              exact="true"
+              activeclassname="active"
+              to="/projects"
+            >
+              PROJECTS
+            </NavLink>
+          </li>
 
-        <NavLink
-          className="home-link"
-          exact="true"
-          activeclassname="active"
-          to="/about"
-        >
-          ABOUT
-        </NavLink>
-
-        <NavLink
-          className="contact-link"
-          exact="true"
-          activeclassname="active"
-          to="/projects"
-        >
-          PROJECTS
-        </NavLink>
-
-        <NavLink
-          className="contact-link"
-          exact="true"
-          activeclassname="active"
-          to="/contact"
-        >
-          CONTACT
-        </NavLink>
-      </nav>
-    </div>
+          <li>
+            <NavLink
+              className="contact-link"
+              exact="true"
+              activeclassname="active"
+              to="/contact"
+            >
+              CONTACT
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
 export default Navbar;
-
-// <ul>
-// <li>
-// <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/jacksonkupris/'>
-//     <FontAwesomeIcon icon={faLinkedin}/>
-// </a>
-// </li>
-
-// <li>
-// <a target='_blank' rel='noreferrer' href='https://github.com/JacksonKupris/'>
-//     <FontAwesomeIcon icon={faGithub}/>
-// </a>
-// </li>
-
-// <li>
-// <a target='_blank' rel='noreferrer' href={Resume}>
-//     <FontAwesomeIcon icon={faStickyNote} />
-// </a>
-// </li>
-
-// </ul>
-
-// <a
-//           target="_blank"
-//           rel="noreferrer"
-//           href="https://www.linkedin.com/in/jacksonkupris/"
-//         >
-//           <FontAwesomeIcon icon={faLinkedin} />
-//         </a>
-
-//         <a
-//           target="_blank"
-//           rel="noreferrer"
-//           href="https://github.com/JacksonKupris/"
-//         >
-//           <FontAwesomeIcon icon={faGithub} />
-//         </a>
-
-//         <a target="_blank" rel="noreferrer" href={Resume}>
-//           <FontAwesomeIcon icon={faStickyNote} />
-//         </a>
-
-// <NavLink
-// className="about-link"
-// exact="true"
-// activeclassname="active"
-// to="/about"
-// >
-// ABOUT
-// </NavLink>
-
-// <Link className="logo" to="/">
-// <img src={Logo} alt="logo" />
-// </Link>
