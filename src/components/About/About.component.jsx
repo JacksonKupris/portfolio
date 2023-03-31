@@ -1,7 +1,6 @@
 import "./About.style.scss";
 import Navbar from "../Navbar/Navbar.component";
 import Cheeba from "../../assets/images/Cheeba.jpg";
-import Llama from '../../assets/images/llama.jpg'
 
 const About = () => {
   return (

@@ -1,7 +1,6 @@
 .animated-name {
   height: 7em;
   animation: fill 0.5s ease forwards 2.2s;
-
 }
 
 .animated-name path:nth-child(1) {
@@ -94,5 +93,85 @@
   }
   to {
     fill: #f8f1f1;
+  }
+}
+
+@media (max-width: 500px) {
+  .animated-name path:nth-child(1) {
+    stroke-dasharray: 45.376em;
+    stroke-dashoffset: 45.376em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(2) {
+    stroke-dasharray: 50.72em;
+    stroke-dashoffset: 50.72em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(3) {
+    stroke-dasharray: 43.88em;
+    stroke-dashoffset: 43.888em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(4) {
+    stroke-dasharray: 57.85em;
+    stroke-dashoffset: 57.85em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(5) {
+    stroke-dasharray: 51.45em;
+    stroke-dashoffset: 51.45em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(6) {
+    stroke-dasharray: 48em;
+    stroke-dashoffset: 48em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(7) {
+    stroke-dasharray: 52.48em;
+    stroke-dashoffset: 52.48em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(8) {
+    stroke-dasharray: 70.14em;
+    stroke-dashoffset: 70.14em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(9) {
+    stroke-dasharray: 52.35em;
+    stroke-dashoffset: 52.35em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(10) {
+    stroke-dasharray: 59.12em;
+    stroke-dashoffset: 59.12em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(11) {
+    stroke-dasharray: 35.84em;
+    stroke-dashoffset: 35.84em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(12) {
+    stroke-dasharray: 38.4em;
+    stroke-dashoffset: 38.4em;
+    animation: line-anim 2s ease forwards;
+  }
+
+  .animated-name path:nth-child(13) {
+    stroke-dasharray: 51.44em;
+    stroke-dashoffset: 51.44em;
+    animation: line-anim 2s ease forwards;
   }
 }

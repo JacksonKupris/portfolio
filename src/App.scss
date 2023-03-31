@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
-
 }
 
 body {
@@ -31,8 +30,14 @@ textarea,
 .flat-button,
 a {
   color: #f8f1f1;
+  text-decoration: none;
 }
 
+.flat-button:hover {
+  transition: 0.75s;
+}
 a:hover {
   color: #ffa62b;
+  text-decoration: underline;
+  transition: 0.75s;
 }

@@ -1,25 +1,25 @@
 import "./Navbar.style.scss";
 import { NavLink } from "react-router-dom";
 
-const toggleNav = () => {
-  const toggleButton = document.getElementsByClassName("toggle-button")[0];
-  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-
-  toggleButton.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-  });
-};
+// const toggleNav = () => {
+//   const toggleButton = document.getElementsByClassName("toggle-button")[0];
+//   const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+//   toggleButton.addEventListener("click", () => {
+//     navbarLinks.classList.toggle("active");
+//   });
+// };
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <button className="toggle-button" onClick={toggleNav}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </button>
-      <div className="navbar-links">
-        <ul>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
           <li>
             <NavLink
               className="home-link"
@@ -50,7 +50,6 @@ const Navbar = () => {
               PROJECTS
             </NavLink>
           </li>
-
           <li>
             <NavLink
               className="contact-link"
@@ -68,3 +67,105 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// <nav className="navbar">
+//   <button className="toggle-button" onClick={toggleNav}>
+//     <span className="bar"></span>
+//     <span className="bar"></span>
+//     <span className="bar"></span>
+//   </button>
+//   <div className="navbar-links">
+//     <ul>
+//       <li>
+// <NavLink
+//   className="home-link"
+//   exact="true"
+//   activeclassname="active"
+//   to="/"
+// >
+//   HOME
+// </NavLink>
+// //       </li>
+// //       <li>
+// <NavLink
+//   className="home-link"
+//   exact="true"
+//   activeclassname="active"
+//   to="/about"
+// >
+//   ABOUT
+// </NavLink>
+// //       </li>
+// //       <li>
+// <NavLink
+//   className="contact-link"
+//   exact="true"
+//   activeclassname="active"
+//   to="/projects"
+// >
+//   PROJECTS
+// </NavLink>
+// //       </li>
+
+// //       <li>
+// <NavLink
+//   className="contact-link"
+//   exact="true"
+//   activeclassname="active"
+//   to="/contact"
+// >
+//   CONTACT
+// </NavLink>
+// //       </li>
+//     </ul>
+//   </div>
+// </nav>
+
+// <section class="top-nav">
+// <input id="menu-toggle" type="checkbox" />
+// <label class="menu-button-container" for="menu-toggle">
+//   <div class="menu-button"></div>
+// </label>
+// <ul class="menu">
+//   <li>
+//     <NavLink
+//       className="home-link"
+//       exact="true"
+//       activeclassname="active"
+//       to="/"
+//     >
+//       HOME
+//     </NavLink>
+//   </li>
+//   <li>
+//     <NavLink
+//       className="home-link"
+//       exact="true"
+//       activeclassname="active"
+//       to="/about"
+//     >
+//       ABOUT
+//     </NavLink>
+//   </li>
+//   <li>
+//     <NavLink
+//       className="home-link"
+//       exact="true"
+//       activeclassname="active"
+//       to="/projects"
+//     >
+//       PROJECTS
+//     </NavLink>
+//   </li>
+//   <li>
+//     <NavLink
+//       className="home-link"
+//       exact="true"
+//       activeclassname="active"
+//       to="/contact"
+//     >
+//       CONTACT
+//     </NavLink>
+//   </li>
+// </ul>
+// </section>
