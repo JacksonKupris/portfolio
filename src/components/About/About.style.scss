@@ -9,12 +9,6 @@
   margin-top: 10rem;
 }
 
-@media (min-width: 40em) {
-  .about-container {
-    height: min(85%, 70.5em);
-    grid-template-rows: 1fr 1fr;
-  }
-}
 .about-paragraph {
   height: 100%;
   width: min(90%, 70.5em);
