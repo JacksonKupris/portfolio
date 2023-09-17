@@ -33,8 +33,8 @@ const Contact = () => {
       <Navbar />
 
       <div className="container">
-      <div className="contact-form">
-        <p className="contact-title">CONTACT ME</p>
+        <div className="contact-form">
+          <p className="contact-title">CONTACT ME</p>
           <form ref={refForm} onSubmit={sendEmail}>
             <ul>
               <li>
@@ -71,7 +71,9 @@ const Contact = () => {
                 ></textarea>
               </li>
               <li>
-                <button className="flat-button" type="submit" value="Submit" >SUBMIT</button>
+                <button className="flat-button" type="submit" value="Submit">
+                  SUBMIT
+                </button>
               </li>
             </ul>
           </form>

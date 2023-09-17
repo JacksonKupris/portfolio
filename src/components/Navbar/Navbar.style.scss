@@ -56,9 +56,9 @@
   }
 
   .navbar-container {
-    display: block;
-    position: relative;
-    height: 10rem;
+    display: flex;
+    height: 98.3vh;
+    max-width: 40em;
   }
 
   .navbar-container input[type="checkbox"] {
@@ -112,10 +112,12 @@
     background: #222;
     height: 100vh;
     max-width: 30rem;
+    width: 95%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -8em;
+    align-items: flex-start;
+    margin-left: -15em;
     transition: transform 0.5s ease-in-out;
   }
 
