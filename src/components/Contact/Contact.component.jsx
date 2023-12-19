@@ -8,22 +8,20 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(refForm.current);
-    emailjs
-      .sendForm(
+    emailjs.sendForm(
         process.env.REACT_APP_EMAIL_JS_KEY,
         process.env.REACT_APP_EMAIL_JS_TEMPLATE,
         refForm.current,
-        process.env.REACT_APP_EMAIL_JS_PUBLIC
-
-        // 'gmail',
+        process.env.REACT_APP_EMAIL_JS_PUBLIC,
       )
       .then(
-        () => {
+        (result) => {
+          console.log(result.text);
           alert("Message sent successfully!");
           window.location.reload(false);
         },
-        () => {
+        (error) => {
+          console.log(error.text);
           alert("Message failed to send, please try again.");
         }
       );
