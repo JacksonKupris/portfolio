@@ -1,9 +1,13 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Contact.style.scss";
 import Navbar from "../Navbar/Navbar.component";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const refForm = useRef();
 
   const sendEmail = (e) => {
@@ -17,8 +21,10 @@ const Contact = () => {
       .then(
         (result) => {
           alert("Message sent successfully!");
-          document.location.href = document.location.href;
-
+          setEmail("");
+          setName("");
+          setSubject("");
+          setMessage("");
           // window.location.reload(true);
         },
         (error) => {
@@ -41,6 +47,8 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 ></input>
               </li>
@@ -49,23 +57,28 @@ const Contact = () => {
                   name="email"
                   type="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 ></input>
               </li>
               <li>
                 <input
-                  type="text"
                   name="subject"
+                  type="text"
                   placeholder="Subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                   required
                 ></input>
               </li>
-
               <li>
                 <textarea
                   type="text"
                   name="message"
                   placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                 ></textarea>
               </li>
