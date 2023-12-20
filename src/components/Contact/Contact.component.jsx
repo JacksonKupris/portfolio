@@ -25,7 +25,6 @@ const Contact = () => {
           setName("");
           setSubject("");
           setMessage("");
-          // window.location.reload(true);
         },
         (error) => {
           console.log(error.text);
