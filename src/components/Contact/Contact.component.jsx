@@ -17,7 +17,7 @@ const Contact = () => {
       .then(
         (result) => {
           alert("Message sent successfully!");
-          window.location.reload(true);
+          // window.location.reload(true);
         },
         (error) => {
           console.log(error.text);
