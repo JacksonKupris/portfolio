@@ -15,7 +15,7 @@ export const projects = [
     title: "Monster Rolodex",
     subtitle: "React",
     description:
-      "A Monster Rolodex that allows you to search show specific monsters. It utilizes the JSON Placeholder API.",
+      "A Monster Rolodex that allows you to search and show specific monsters. It utilizes the JSON Placeholder API.",
     image: monstersRolodex,
     link: "https://jacksonkupris.github.io/MonsterRolodex/",
   },
